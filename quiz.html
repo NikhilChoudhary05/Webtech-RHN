@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHN Edu - Quizzes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .logo-img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 110px;
+            height: auto;
+        }
+
+        .logo-text {
+            font-size: 42px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 80px;
+        }
+
+        .logo-text span {
+            color: #FF9800;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #FF9800;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            text-align: center;
+            color: #2e7d32;
+        }
+
+        .quiz-section {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="RHN Edu Logo" class="logo-img">
+        <div class="logo-text">RHN <span>Edu</span></div>
+    </header>
+
+    <nav>
+        <a href="new.php">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <div class="container">
+        <h2>Test Your Knowledge</h2>
+
+        <div class="quiz-section" id="webDevQuiz">
+            <h3>Web Development Quiz</h3>
+            <div class="question">1. What does HTML stand for?</div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+                <label><input type="radio" name="q1" value="b"> Hyper Transfer Markup Language</label>
+                <label><input type="radio" name="q1" value="c"> High Text Machine Language</label>
+            </div>
+        </div>
+
+        <div class="quiz-section" id="businessQuiz">
+            <h3>Business Management Quiz</h3>
+            <div class="question">1. What is the primary goal of business management?</div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> Maximize Profit</label>
+                <label><input type="radio" name="q2" value="b"> Minimize Cost</label>
+                <label><input type="radio" name="q2" value="c"> Improve Employee Satisfaction</label>
+            </div>
+        </div>
+
+        <div class="quiz-section" id="graphicDesignQuiz">
+            <h3>Graphic Design Quiz</h3>
+            <div class="question">1. Which software is primarily used for vector graphics?</div>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> Adobe Photoshop</label>
+                <label><input type="radio" name="q3" value="b"> Adobe Illustrator</label>
+                <label><input type="radio" name="q3" value="c"> Corel Painter</label>
+            </div>
+        </div>
+
+        <div class="quiz-section" id="dataScienceQuiz">
+            <h3>Data Science Quiz</h3>
+            <div class="question">1. What is a common programming language used in Data Science?</div>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> Java</label>
+                <label><input type="radio" name="q4" value="b"> Python</label>
+                <label><input type="radio" name="q4" value="c"> C++</label>
+            </div>
+        </div>
+
+        <button class="submit-btn" onclick="submitQuiz()">Submit Answers</button>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            alert("Thank you for taking the quiz! Your answers have been recorded.");
+        }
+    </script>
+</body>
+</html>

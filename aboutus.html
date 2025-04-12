@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - RHN Edu</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #388E3C);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .logo-img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 110px;
+      height: auto;
+    }
+
+    .logo-text {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-left: 80px;
+    }
+
+    .logo-text span {
+      color: #FF9800;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #FF9800;
+      color: #fff;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 40px;
+      font-size: 26px;
+    }
+
+    .section-content {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.8;
+      margin-top: 20px;
+      text-align: left;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 2px solid #4CAF50;
+    }
+
+    ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #388E3C;
+    }
+
+    @media (max-width: 768px) {
+      .logo-text {
+        margin-left: 0;
+        font-size: 32px;
+      }
+
+      .logo-img {
+        width: 90px;
+      }
+
+      nav a {
+        float: none;
+        text-align: left;
+        padding: 12px 16px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="RHN Edu Logo" class="logo-img">
+    <div class="logo-text">RHN <span>Edu</span></div>
+  </header>
+
+  <nav>
+    <a href="new.php">Home</a>
+    <a href="javascript:void(0);" onclick="openModal('signInModal')">Sign In</a>
+    <a href="javascript:void(0);" onclick="openModal('signUpModal')">Sign Up</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <div class="container">
+    <h2>About Us</h2>
+
+    <div class="section-content">
+      <p><strong>RHN Edu</strong> is an innovative online learning platform designed to provide personalized education and skill development to individuals worldwide. With the power of technology, we aim to make high-quality education accessible to everyone, regardless of their location or background.</p>
+
+      <h3>Our Journey</h3>
+      <p>Founded in 2015, RHN Edu started with a simple yet ambitious goal: to empower learners to achieve their academic and professional goals. Over the years, we have expanded our offerings, collaborating with top universities and industry professionals to provide courses and certifications that are both relevant and valuable.</p>
+
+      <h3>Our Mission</h3>
+      <p>At RHN Edu, we believe that education should be flexible, engaging, and accessible to all. Our mission is to create a global community of learners who are committed to achieving their personal and professional development goals through high-quality online education.</p>
+
+      <h3>Our Values</h3>
+      <ul>
+        <li><strong>Innovation:</strong> Enhancing the learning experience with cutting-edge technology.</li>
+        <li><strong>Accessibility:</strong> Making education affordable and available for everyone.</li>
+        <li><strong>Collaboration:</strong> Building a strong community of learners, instructors, and experts.</li>
+        <li><strong>Integrity:</strong> Upholding the highest standards of quality and transparency.</li>
+      </ul>
+
+      <h3>Our Services</h3>
+      <ul>
+        <li><strong>Online Courses:</strong> Covering science, technology, arts, and more—self-paced and accessible.</li>
+        <li><strong>One-on-One Tutoring:</strong> Personalized help from experienced educators.</li>
+        <li><strong>Certifications:</strong> Industry-recognized credentials to boost your resume.</li>
+        <li><strong>Live Webinars & Workshops:</strong> Hands-on learning from professionals in real time.</li>
+      </ul>
+
+      <h3>Why Choose RHN Edu?</h3>
+      <ul>
+        <li><strong>Expert Instructors:</strong> Learn from highly qualified and experienced professionals.</li>
+        <li><strong>Flexible Learning:</strong> Study anytime, anywhere, on any device.</li>
+        <li><strong>Global Community:</strong> Be part of a vibrant international learning network.</li>
+        <li><strong>Affordable Education:</strong> Quality education that fits your budget.</li>
+      </ul>
+
+      <h3>Our Future</h3>
+      <p>We're committed to continuous innovation and growth. As we expand, we will introduce new programs and tools to improve your learning experience and better serve our community.</p>
+
+      <h3>Get Involved</h3>
+      <p>Join our mission to make learning accessible for all. Explore our courses, participate in webinars, or reach out to learn more about how RHN Edu can support your goals.</p>
+
+      <p><strong>Thank you for choosing RHN Edu. We’re excited to be part of your learning journey!</strong></p>
+
+      <a href="new.php" class="cta">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Optional Modal Script -->
+  <script src="modal.js"></script>
+</body>
+</html>

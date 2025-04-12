@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - RHN Edu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #FF9800;
+            color: #fff;
+        }
+
+        /* Profile Container */
+        .profile-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4CAF50;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .profile-email {
+            font-size: 18px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        /* Profile Details */
+        .profile-details {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .profile-details h3 {
+            color: #4CAF50;
+            font-size: 20px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .profile-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        /* Edit Button */
+        .edit-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .edit-btn:hover {
+            background: #388E3C;
+        }
+
+        /* Logout Button */
+        .logout-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #f44336;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .logout-btn:hover {
+            background: #d32f2f;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        👤 My Profile - RHN Edu
+    </header>
+    <nav>
+        <a href="new.php">Home</a>
+        <a href="aboutus.html">About Us</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      
+      <a href="quiz.html">Quiz</a>
+      
+      
+      </nav>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-email">johndoe@example.com</p>
+
+        <!-- Profile Details -->
+        <div class="profile-details">
+            <h3>📜 Personal Information</h3>
+            <p><strong>Full Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+
+            <h3>📚 Courses Enrolled</h3>
+            <p>✅ Web Development Masterclass</p>
+            <p>✅ Python for Data Science</p>
+            <p>✅ Digital Marketing 101</p>
+
+            <h3>🏆 Achievements</h3>
+            <p>🎓 Web Development Certification - Completed</p>
+            <p>🎓 Python for Data Science - In Progress</p>
+            <p>🏅 RHN Edu Top Performer - January 2025</p>
+        </div>
+
+        <!-- Edit & Logout Buttons -->
+        <a href="edit-profile.html" class="edit-btn">Edit Profile</a>
+        <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+
+</body>
+</html>

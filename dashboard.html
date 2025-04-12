@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHN Edu Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #4CAF50;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            background: linear-gradient(135deg, #4CAF50, #4CAF50);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .dashboard-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: #4CAF50;
+        }
+
+        .progress-bar {
+            height: 15px;
+            width: 100%;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress {
+            height: 100%;
+            width: 60%;
+            background: #4CAF50;
+        }
+
+        @media screen and (max-width: 768px) {
+            .dashboard-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="new.php">Home</a>
+        <a href="aboutus.html">About Us</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      
+      <a href="quiz.html">Quiz</a>
+      
+      
+      </nav>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>📚 RHN Edu</h2>
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="courses.html">📖 My Courses</a>
+        <a href="profile.html">👤 Profile</a>
+        <a href="setting.html">⚙️ Settings</a>
+        <a href="new.php">🚪 Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h1>Welcome</h1>
+            <p>Your learning journey starts here.</p>
+        </div>
+
+        <!-- Dashboard Stats -->
+        <div class="dashboard-container">
+
+            <!-- Enrolled Courses -->
+            <div class="card">
+                <h3>📚 Enrolled Courses</h3>
+                <p>You are enrolled in <b>5 courses</b></p>
+                <a href="courses.html" class="read-more">View Courses</a>
+            </div>
+
+            <!-- Learning Progress -->
+            <div class="card">
+                <h3>📊 Learning Progress</h3>
+                <p>You're 60% through your current course</p>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="card">
+                <h3>📅 Upcoming Webinars</h3>
+                <p>Next event: <b>Advanced Python Workshop</b> (April 5)</p>
+                <a href="event.html" class="read-more">View Events</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
